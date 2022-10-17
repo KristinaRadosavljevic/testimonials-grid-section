@@ -9,4 +9,40 @@
 body {
   font-size: 0.813rem;
   line-height: 1.4;
-  font-family: "Barlow Semi Condensed", sans-serif; }
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: #ecf2f8;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+  padding-bottom: 10rem; }
+
+main {
+  max-width: 70rem;
+  display: grid;
+  grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+  gap: 2rem; }
+
+article {
+  border-radius: 0.5rem;
+  padding: 2rem; }
+  article.daniel {
+    grid-area: daniel;
+    background-color: #7541c8;
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top 0 right 15%; }
+  article.jonathan {
+    grid-area: jonathan;
+    background-color: #48556a; }
+  article.jeanette {
+    grid-area: jeanette;
+    background-color: white;
+    box-shadow: 0.5rem 2rem 2rem rgba(0, 0, 0, 0.08); }
+  article.patrick {
+    grid-area: patrick;
+    background-color: #19212e; }
+  article.kira {
+    grid-area: kira;
+    background-color: white;
+    box-shadow: 0.5rem 2rem 2rem rgba(0, 0, 0, 0.08); }

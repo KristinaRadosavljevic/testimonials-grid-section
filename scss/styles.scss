@@ -8,6 +8,12 @@ $white: hsl(0, 0%, 100%);
 $light-gray: hsl(0, 0%, 81%);
 $light-grayish-blue: hsl(210, 46%, 95%);
 
+// Card mixin
+@mixin card($area, $background) {
+  grid-area: $area;
+  background-color: $background;
+}
+
 // Global resets
 *,
 *::before,
@@ -21,6 +27,51 @@ body {
   font-size: 0.813rem;
   line-height: 1.4;
   font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: $light-grayish-blue;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+  padding-bottom: 10rem;
+}
+
+main {
+  max-width: 70rem;
+  display: grid;
+  grid-template-areas:
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+  gap: 2rem;
+}
+
+article {
+  border-radius: 0.5rem;
+  padding: 2rem;
+
+  &.daniel {
+    @include card(daniel, $moderate-violet);
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top 0 right 15%;
+  }
+
+  &.jonathan {
+    @include card(jonathan, $very-dark-grayish-blue);
+  }
+
+  &.jeanette {
+    @include card(jeanette, $white);
+    box-shadow: 0.5rem 2rem 2rem hsla(0, 0%, 0%, 0.08);
+  }
+
+  &.patrick {
+    @include card(patrick, $very-dark-blackish-blue);
+  }
+
+  &.kira {
+    @include card(kira, $white);
+    box-shadow: 0.5rem 2rem 2rem hsla(0, 0%, 0%, 0.08);
+  }
 }
 
 // Note for text colors:
