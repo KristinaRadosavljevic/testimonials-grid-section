@@ -11,8 +11,6 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -29,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [See the code on GitHub]()
-- Live Site URL: [View live site]()
+- Solution URL: [See the code on GitHub](https://github.com/KristinaRadosavljevic/testimonials-grid-section)
+- Live Site URL: [View live site](https://testimonials-grid-section-six-gules.vercel.app/)
 
 ## My process
 
@@ -38,12 +36,12 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS/Sass
+- CSS grid
+- Media queries
 
 ### What I learned
 
-### Continued development
-
-### Useful resources
+This project gave me an opportunity to dig a bit deeper into CSS grid and become even more confortable with using it.
 
 ## Author
 
