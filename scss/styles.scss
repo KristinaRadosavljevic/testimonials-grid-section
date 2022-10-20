@@ -127,3 +127,22 @@ article {
     box-shadow: 0.5rem 2rem 2rem hsla(0, 0%, 0%, 0.08);
   }
 }
+
+// Media queries
+@media (max-width: 930px) {
+  body {
+    padding: 4rem 1.5rem;
+  }
+
+  main {
+    max-width: 30rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "daniel"
+      "jonathan"
+      "jeanette"
+      "patrick"
+      "kira";
+    gap: 1.5rem;
+  }
+}
